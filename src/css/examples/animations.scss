@@ -1,0 +1,25 @@
+#animations{
+    .the-animations{
+        display:flex;
+        justify-content:space-around;
+        .smiley{
+            width: 15%;
+            animation: Smiley 5s infinite cubic-bezier(0,.98,1,0);
+        }
+        .cat{
+            width: 22%;
+        }
+    }
+}
+
+@keyframes Smiley{
+    0%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

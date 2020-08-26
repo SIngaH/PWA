@@ -1,0 +1,31 @@
+#gallery{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin: 5% 0;
+    h2{
+        grid-column:1/span 2;
+    }
+    .gallery_img_change{
+        width:20%;
+        place-self:center;
+        grid-row:2;
+        grid-column:1/ span 2;
+        border-radius:10%;
+    }
+    .left_arrow, .right_arrow{
+        width:15%;
+        place-self:center;
+        grid-row:5;
+    }
+    .right_arrow{
+        transform: rotate(180deg);
+    }
+    .gallery_h1_change{
+        grid-row:3;
+        grid-column:1/ span 2;
+    }
+    .gallery_change_p{
+        grid-row:4;
+        grid-column:1/ span 2;
+    }
+}

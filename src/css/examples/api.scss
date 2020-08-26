@@ -1,0 +1,30 @@
+#left-arrow{
+    transform: rotate(180deg);
+}
+.section-div{
+    display:grid;
+    grid-template-columns:10% 80% 10%;
+    text-align:center;
+    h3{
+        font-size:30px;
+        text-decoration: underline;
+    }
+    #right-arrow{
+        place-self:center flex-end;
+    }
+    #left-arrow{
+        place-self: center flex-start;
+    }
+    p{
+        font-weight:bold;
+        span{
+            font-weight:normal;
+        }
+    }
+}
+
+@media only screen and (max-width:556px){
+    #API #section-div #left-arrow, #API #section-div #right-arrow{
+        width: 53%;
+    }
+}

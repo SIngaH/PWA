@@ -1,0 +1,65 @@
+.header{
+    grid-area: 1 /span 3;
+    button{
+        font-size:40px;
+        line-height: 50px;
+        font-weight:bolder;
+        font-family: 'Cute Font', cursive;
+        background-color:#36E915;
+        border:solid 3px #000; 
+        border-radius:5px;
+        margin:0;
+        padding:2%;
+        z-index: 4;
+        display:none;
+        position:relative;
+        top: 212%;
+        left: 16.5%;
+    }
+    .h1{
+        font-size: 47px;
+        line-height: 0.5;
+        padding:6% 0;
+        margin:0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .header button {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:949px){
+    .header button{
+        top: 167%;
+        left:10%;
+    }
+}
+
+@media only screen and (max-width:833px){
+    .header button {
+        top: 191%;
+        left: 27%;
+    }
+}
+
+@media only screen and (max-width:690px){
+    .header button {
+        left: 22%;
+    }
+}
+
+@media only screen and (max-width:427px){
+    .header button {
+        left: 17%;
+    }
+}
+
+@media only screen and (max-width:336px){
+    .header button {
+        top: 298%;
+        left: 7%;
+    }
+}

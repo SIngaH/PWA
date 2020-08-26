@@ -1,0 +1,36 @@
+.footer{
+    display: contents;
+    .player1{
+        display: contents;
+        img{
+            grid-row:6;
+            grid-column:1;
+            place-self:end start;
+            padding:2% 0 0 2%;
+        }
+        h2{
+            grid-row:6;
+            grid-column: 1/span 2;
+            text-align: right;
+            padding:0;
+            margin:0;
+            place-self:end center;
+        }
+    } 
+    .player2{
+        display: contents;
+        img{
+            grid-row:6;
+            grid-column:3;
+            place-self:end;
+        }
+        h2{
+            grid-row:6;
+            grid-column:2/span 2;
+            place-self:start;
+            padding:0;
+            margin:0;
+            place-self: end center;
+        }
+    }
+}

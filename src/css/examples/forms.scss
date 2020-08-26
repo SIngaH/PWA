@@ -1,0 +1,111 @@
+#formJS, #form-html{
+    form{
+        display:grid;
+        grid-template-columns:20% 80%;
+        grid-template-rows:auto;
+        row-gap:2%;
+        padding-bottom:5%;
+        .formgroup{
+            display:contents;
+            input, textarea{
+                width:80%;
+                grid-column:2;
+                place-self:end;
+                font-size: 16px;
+            }
+            label{
+                grid-column:1;
+                text-align: start;
+            }
+        }
+        .button, .form__submit{
+            background-color: var(--green);
+            border:solid 2px var(--blue);
+            border-radius: 10px;
+            place-self:end;
+            width:20%;
+            padding:1%;
+            font-size:15px;
+            grid-column:2;
+            grid-row:7;
+            &:hover{
+                background-color: var(--blue);
+                border:solid 2px var(--green);
+                color:#fff;
+            }
+        }
+        #ath{
+            grid-column:1/ span 2;
+            grid-row:7;
+            place-self:start;
+        }
+    }
+}
+
+@media only screen and (max-width:919px){
+    #formJS form, #form-html form{
+        grid-template-columns: 33% 67%;
+        .formgroup{
+            label, input, textarea{
+                width:90%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:800px){
+    #formJS form, #form-html form{
+        .button, .form__submit{
+            font-size:14px;    
+        }
+        #ath{
+            font-size:12px;
+        }
+        .formgroup{
+            label, input, textarea{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:585px){
+    #formJS form, #form-html form{
+        grid-template-columns: 33% 67%;
+        .button, .form__submit {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width:542px){
+    #formJS form, #form-html form{
+        .button, .form__submit{
+            font-size:9px;
+        }
+        #ath{
+            font-size:10px;
+        }
+        .formgroup{
+            input, textarea, label{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:400px){
+    #formJS form, #form-html form{
+        .button, .form__submit{
+            font-size:7px;
+        }
+        #ath{
+            font-size:6px;
+        }
+        .formgroup{
+            input, textarea, label {
+                font-size:6px;
+            }
+        }
+    }
+}

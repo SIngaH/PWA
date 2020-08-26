@@ -1,0 +1,146 @@
+nav ul, footer ul{
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    li{
+        list-style: none;
+        font-size:20px;
+        padding:1% 0;
+        text-transform: uppercase;
+        a{
+            font-weight:normal;
+            color:#000;
+            &:hover{
+                font-weight: bold;
+                text-decoration: line-through 2px;
+            }   
+        }
+    }
+    #icons{
+        display:contents;
+    }
+    .drop-down{
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+        li{
+            list-style: none;
+            font-size:20px;
+            text-decoration: underline 2px;
+            text-transform: uppercase;
+            padding:1% 0;
+            a{
+                font-weight:normal;
+                color:#000;
+                &:hover{
+                    text-decoration: line-through 2px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .fa-chevron-circle-down{
+        display:none;
+    }
+    .fa-home{
+        font-size: 20px;
+        padding-left:30%;
+    }
+    .fa-linkedin{
+        font-size:20px;
+    }
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+    max-width: 960px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 900px){
+    nav .drop-down li a, .fa-linkedin, .fa-home{
+        font-size:18px;
+    }
+}
+
+@media only screen and (max-width: 849px){
+    nav .drop-down li a, .fa-linkedin, .fa-home{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 792px){
+    nav .drop-down li a, .fa-linkedin, .fa-home{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 722px){
+    nav .drop-down li a, .fa-linkedin, .fa-home{
+        font-size: 12px;
+    }
+    nav li a{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 663px){
+    nav .drop-down li a, .fa-linkedin, .fa-home{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 659px){
+    #nav-ul{
+        flex-direction:column;
+        #drop-down{
+            display:none;
+        }
+    }
+    nav ul #icons{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+    nav ul li #drop-down-icon{
+        display:block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    nav ul li a .fa-home{
+        font-size: 30px;
+        padding-left:0%;
+    }
+    nav li a{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 559px){
+    footer ul li a{
+        font-size:17px;
+    }
+}
+
+@media only screen and (max-width: 534px){
+    footer ul{
+        flex-direction:column;
+        text-align: center;
+    }
+    nav li a{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 462px){
+    nav ul{
+        flex-direction:column;
+        text-align: center;
+    }
+    .sticky{
+        position:static;
+    }
+}

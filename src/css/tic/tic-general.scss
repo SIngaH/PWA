@@ -1,0 +1,63 @@
+main{
+    background: url("../../images/tic-tac-toe/background.jpg");
+    background-repeat: repeat;
+    background-size:100%;
+    background-position: center;
+    object-fit: cover;
+    display: grid;
+    z-index: 0;
+}
+#main-content{
+	box-sizing:border-box;
+	font-family: 'Cute Font', cursive;
+	display:grid;
+	grid-template-rows: 13% repeat(3, 23%) 1%;
+	grid-template-columns:repeat(3, 20%);
+    z-index:2;
+    height:769px;
+    position:relative;	
+    width: 91%;
+    margin: 0 0 6% 22%;
+}
+.header #h1{
+    line-height: 1;
+}
+.h2{
+	font-size: 35px;
+	line-height: 60px;
+}
+
+@media only screen and (max-width:908px){
+    .h2{
+        font-size: 25px;
+    }
+    .player1 img, .player2 img{
+        width:50%;
+    }
+}
+
+@media only screen and (max-width:834px){
+    #main-content{
+        grid-template-rows: 18% repeat(3, 23%);
+        grid-template-columns:repeat(3, 35%);
+        margin: 0 0 6% 2%;
+    }
+    .header #h1{
+        padding:3% 0;
+   }
+}
+
+@media only screen and (max-width:413px){
+    .h2{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:336px){
+    .header #h1{
+        font-size:30px;
+   }
+   #main-content{
+    grid-template-rows: 10% repeat(3, 23%);
+    }
+}

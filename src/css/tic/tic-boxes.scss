@@ -1,0 +1,12 @@
+.box{
+	background-color: #D487EF;
+	border:solid 3px #000;
+    position:relative;
+    display:grid;
+    .panda{
+        display:none;
+        place-self:center;
+        width:70%;
+        height:auto;
+    }
+}

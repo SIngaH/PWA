@@ -1,0 +1,117 @@
+#about-my-education{
+        h2{
+            grid-row:1;
+            grid-column:1/span 2;
+            margin:0;
+            text-align: center;
+        a{
+            color:#fff;
+            text-decoration: underline 2px;
+        }
+    }
+    #education-grid{
+        display:grid;
+        grid-template-rows:10% 39% 10% 20% 14% 20%;       
+        h3{
+            grid-column:1/span 2;
+        }
+        .much, .moderate, .little{
+            grid-column:1;
+            ul{
+                display:flex;
+                justify-content: space-between;
+                flex-direction: column;
+                margin:0;
+                padding-left: 5%;
+                li{
+                    list-style: none;
+                    text-transform: capitalize;
+                    position: relative;
+                    .li-arrow, .li-arrow2, .li-arrow3{
+                        cursor: pointer;
+                        width:5%;
+                        transform: rotate(180deg);
+                        position: relative;
+                        top: 21%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .much-h3{
+        grid-row:1;
+    }
+    .moderate-h3{
+        grid-row:3;
+    }
+    .little-h3{
+        grid-row:5;
+    }
+    .much-explainer, .moderate-explainer, .little-explainer{
+        grid-column:2;
+        text-transform: capitalize;
+        p{
+            margin:0;
+        }
+    }
+    .much-explainer{
+        grid-row:2;
+    }
+    .moderate-explainer{
+        grid-row:4;
+    }
+    .little-explainer{
+        grid-row:6;
+    }
+    .move-arrow{
+        animation: arrow 2s forwards normal;
+    }
+}
+
+@keyframes arrow{
+    to{
+        top: 20%;
+        left: 38%;
+    }
+}
+
+@media only screen and (max-width:757px){
+    @keyframes arrow{
+        to{
+            left: 35%;
+        }
+    }
+}
+
+@media only screen and (max-width:706px){
+    @keyframes arrow{
+        to{
+            left: 15%;
+        }
+    }
+}
+
+@media only screen and (max-width:543px){
+    @keyframes arrow{
+        to{
+            left: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width:473px){
+    @keyframes arrow{
+        to{
+            left: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width:400px){
+    @keyframes arrow{
+        to{
+            left: 1%;
+        }
+    }
+}

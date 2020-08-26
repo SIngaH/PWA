@@ -1,0 +1,69 @@
+                <section id="formJS">
+                    <h2>Denne form validering er lavet i Javascript</h2>
+                    <form id="form1" action="javascript:alert('Du har udfyldt formen rigtigt')" onsubmit="return validation()" method="post">
+                        <div class="formgroup">
+                            <label>Navn:</label>
+                            <input type="text" name="navn" placeholder="Navn" class="input-navn">    
+                        </div>
+
+                        <div class="formgroup">
+                            <label>Alder:</label>
+                            <input type="text" name="alder" placeholder="Du skal være over 18" class="input-alder">    
+                        </div>
+
+                        <div class="formgroup">
+                            <label>Email:</label>
+                            <input type="text" name="email1" placeholder="fake@email.com" class="input-email">
+                        </div>
+
+                        <div class="formgroup">
+                            <label>Gentag Email:</label>
+                            <input type="text" name="email2" placeholder="fake@email.com" class="input-email2">
+                        </div>
+
+                        <div class="formgroup">
+                            <label>Mobilnummer:</label>
+                            <input type="text" name="mobil" placeholder="52146815" class="input-mobil">
+                        </div>
+                        
+                        <div class="formgroup">
+                            <label>Besked:</label>
+                            <textarea name="comment" rows="5" placeholder="Skriv din besked her..."></textarea>
+                        </div>
+                        
+                        <input type="submit" value="Indsend" class="button">	 
+                        <div id="ath"></div>
+                    </form>
+                </section>
+
+                <section id="form-html">
+                    <h2>Denne form har validering inden i HTML</h2>
+                    <form action="javascript:alert('Du har udfyldt formen rigtigt')" method="post">
+                        <div class="formgroup">
+                            <label>Dit navn :</label>
+                            <input name="name" placeholder="Dit navn" required pattern=".{3,}">
+                        </div>
+                        
+                        <div class="formgroup">
+                            <label>Virksomhed :</label>
+                            <input type="name" name="last name" placeholder="Virksomhedens navn" required pattern=".{3,}">
+                        </div>
+                        
+                        <div class="formgroup">
+                            <label>Email :</label>
+                            <input type="email" name="emailaddress" placeholder="Email" required pattern=".+\.[a-z]{2,}$">
+                        </div>
+                        
+                        <div class="formgroup">
+                            <label>Telefon :</label>
+                            <input type="tel" name="Telefon" placeholder="52146815" required pattern="[0-9]{8}"> 
+                        </div>
+                        
+                        <div class="formgroup">
+                            <label>Besked :</label>
+                            <textarea name="comment form-input" rows="5" placeholder="Skriv din besked her..." required></textarea>
+                        </div>
+                        
+                        <input type="submit" value="Indsend" class="form__submit" id="react-scroll">
+                    </form>
+                </section>
