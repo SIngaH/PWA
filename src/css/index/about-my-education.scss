@@ -14,6 +14,7 @@
         grid-template-rows:10% 39% 10% 20% 14% 20%;       
         h3{
             grid-column:1/span 2;
+            padding-bottom:2%;
         }
         .much, .moderate, .little{
             grid-column:1;
