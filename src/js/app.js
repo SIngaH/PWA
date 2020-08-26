@@ -37,8 +37,8 @@ if ('serviceWorker' in navigator) {
     
   });
 }  
-
-// Notification
+//https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
+// Notifications
 Notification.requestPermission(function(status){
   console.log("Notification premission status: ", status)
   if(Notification.permission === "granted"){
