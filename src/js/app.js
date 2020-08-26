@@ -47,6 +47,7 @@ Notification.requestPermission(function(status){
       let options = {
         body: "This is the body of the notification",
         icon: "./assets/images/SIH-192.png",
+        vibrate: [100, 50, 100],
         data: {
           dateOfArrival: Date.now(),
           primaryKey: 1
