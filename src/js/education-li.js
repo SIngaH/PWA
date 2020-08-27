@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         ImgArray.forEach(Img => {
             Img.classList.remove("move-arrow");
             Img.style.width="10%";
-            // educationGrid.style.gridTemplateRows ="0.4fr 1.5fr 0.4fr 1fr 0.4fr 0.4fr";
         });
         educationGrid.style.gridTemplateRows ="0.2fr 0.1fr 0.2fr 1fr 0.4fr 0.2fr";
         e.target.classList.add("move-arrow");
