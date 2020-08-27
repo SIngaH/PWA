@@ -19,12 +19,16 @@
         }
         .much, .moderate, .little{
             grid-column:1;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
             ul{
                 display:flex;
-                justify-content: space-between;
+                justify-content: start;
                 flex-direction: column;
                 margin:0;
                 padding-left: 5%;
+                grid-row:1;
+                grid-column:1;
                 li{
                     list-style: none;
                     text-transform: capitalize;
@@ -34,7 +38,7 @@
                         width:5%;
                         transform: rotate(180deg);
                         position: relative;
-                        top: 21%;
+                        top: 1%;
                         left: 0;
                     }
                 }
@@ -51,20 +55,12 @@
         grid-row:5;
     }
     .much-explainer, .moderate-explainer, .little-explainer{
-        grid-column:2;
         text-transform: capitalize;
+        grid-row:1;
+        grid-column:2;
         p{
             margin:0;
         }
-    }
-    .much-explainer{
-        grid-row:2;
-    }
-    .moderate-explainer{
-        grid-row:4;
-    }
-    .little-explainer{
-        grid-row:6;
     }
     .move-arrow{
         animation: arrow 2s forwards normal;

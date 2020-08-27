@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         "Jeg lærte lidt om SQL, men jeg brugte det ikke meget, men da vi lærte det så var jeg overasked over hvor god jeg var til det."
     ];
 
+    let educationGrid = document.querySelector("#education-grid");
     let muchExplainer =  document.querySelector(".much-explainer");
     let moderateExplainer = document.querySelector(".moderate-explainer");
     let littleExplainer = document.querySelector(".little-explainer");
@@ -47,7 +48,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         ImgArray.forEach(Img => {
             Img.classList.remove("move-arrow");
             Img.style.width="10%";
+            // educationGrid.style.gridTemplateRows ="0.4fr 1.5fr 0.4fr 1fr 0.4fr 0.4fr";
         });
+        educationGrid.style.gridTemplateRows ="0.2fr 0.1fr 0.2fr 1fr 0.4fr 0.2fr";
         e.target.classList.add("move-arrow");
         ChangeText(e);
 
