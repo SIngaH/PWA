@@ -11,7 +11,8 @@
     }
     #education-grid{
         display:grid;
-        grid-template-rows:10% 39% 10% 20% 14% 20%;       
+        // grid-template-rows:10% 39% 10% 20% 14% 20%;
+        grid-template-rows: 0.4fr 1.5fr 0.4fr 1fr 0.4fr 0.4fr;       
         h3{
             grid-column:1/span 2;
             padding-bottom:2%;
