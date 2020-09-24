@@ -60,6 +60,44 @@ nav ul, footer ul{
     z-index: 1;
 }
 
+//copy link with an alert
+.alert{
+    display:none;
+    height:200px;
+    width:90%;
+    margin:2% 5%;
+    position:relative;
+    background-color: var(--section-color);
+    border:solid 4px black;
+}
+#alert{
+    display:block;
+}
+#the-alert{
+    display:grid;
+    height:100%;
+    h2{
+        place-self: center;
+        margin:0;
+    }
+}
+.link-copied{
+    animation: copied 2s forwards linear;
+}
+#copy-this{
+    display:none;
+}
+@keyframes copied{
+    0%{
+        color:black;
+    }50%{
+        color:greenyellow;
+    }100%{
+        color:black;
+
+    }
+}
+
 @media only screen and (max-width: 900px){
     nav .drop-down li a, .fa-linkedin, .fa-home{
         font-size:18px;
